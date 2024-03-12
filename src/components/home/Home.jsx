@@ -47,13 +47,17 @@ export default function Home() {
         <h2>I'm {info.position}.</h2>
         <Box component={"ul"} p={"0.8rem"}>
           {info.miniBio.map((bio, index) => (
-            <EmojiBullet key={index} emoji={bio.emoji} text={bio.text} />
+            <EmojiBullet
+              key={index}
+              emoji={bio.emoji}
+              text={bio.text}
+              link={bio.link}
+            />
           ))}
         </Box>
         <Box
           display={"flex"}
           gap={"1.5rem"}
-          justifyContent={"center"}
           fontSize={{ xs: "2rem", md: "2.5rem" }}
         >
           {info.socials.map((social, index) => (

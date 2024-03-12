@@ -88,6 +88,35 @@ export default function About() {
       </>
     );
   }
+  function resumeText() {
+    return (
+      <>
+        <p>
+          <span style={{ color: info.baseColor }}>
+            {firstName}
+            {info.lastName.toLowerCase()} $
+          </span>{" "}
+          cd hobbies/interests
+        </p>
+        <p>
+          <span style={{ color: info.baseColor }}>
+            hobbies/interests <span className={Style.green}>(main)</span> $
+          </span>{" "}
+          ls
+        </p>
+        <ul>
+          {info.hobbies.map((hobby, index) => (
+            <li key={index}>
+              <Box component={"span"} mr={"1rem"}>
+                {hobby.emoji}
+              </Box>
+              {hobby.label}
+            </li>
+          ))}
+        </ul>
+      </>
+    );
+  }
 
   return (
     <Box
@@ -99,6 +128,7 @@ export default function About() {
       <Terminal text={aboutMeText()} />
       <Terminal text={skillsText()} />
       <Terminal text={miscText()} />
+      <Terminal text={resumeText()} />
     </Box>
   );
 }

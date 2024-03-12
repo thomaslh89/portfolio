@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 
 function EmojiBullet(props) {
-  const { emoji, text } = props;
+  const { emoji, text, link } = props;
 
   return (
     <Box
@@ -19,8 +19,10 @@ function EmojiBullet(props) {
         fontSize={"1.5rem"}
       >
         {emoji}
-      </Box>{" "}
-      {text}
+      </Box>
+      <a target="_blank" href={link}>
+        {text}
+      </a>
     </Box>
   );
 }
