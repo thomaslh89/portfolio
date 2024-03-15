@@ -25,7 +25,7 @@ function Terminal(props) {
       >
         <FontAwesomeIcon icon="circle" color="#ff6057" />
         <span style={{ marginRight: "10px" }}></span>
-        <FontAwesomeIcon icon="circle" color="#ffbd2e" />
+        <FontAwesomeIcon icon="circle" color="#e5c64d" />
         <span style={{ marginRight: "10px" }}></span>
         <FontAwesomeIcon icon="circle" color="#27c93f" />
       </Box>
