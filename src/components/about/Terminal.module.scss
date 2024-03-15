@@ -2,27 +2,16 @@
 
 i {
   padding-left: 0.5rem;
-
-  &.red {
-    color: $red;
-  }
-
-  &.amber {
-    color: $yellow;
-  }
-
-  &.green {
-    color: $green;
-  }
 }
-
 .terminal {
-  p, li {
+  p,
+  li {
     margin: 1rem 0;
     color: $white;
   }
 
-  a, a:visited {
+  a,
+  a:visited {
     animation: changeColors 3s infinite;
     font-weight: bold;
   }
