@@ -6,6 +6,7 @@ import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -47,12 +48,24 @@ export default function Home() {
         <h2>I'm {info.position}.</h2>
         <Box component={"ul"} p={"0.8rem"}>
           {info.miniBio.map((bio, index) => (
-            <EmojiBullet
-              key={index}
-              emoji={bio.emoji}
-              text={bio.text}
-              link={bio.link}
-            />
+            <li key={index}>
+              {bio.link ? (
+                <Link
+                  to={bio.link}
+                  onClick={(e) => {
+                    if (bio.link === "/resume") {
+                      e.preventDefault();
+                      // Ajoutez ici le code pour gérer la navigation interne vers votre CV
+                      // Par exemple : history.push('/resume');
+                    }
+                  }}
+                >
+                  <EmojiBullet emoji={bio.emoji} text={bio.text} />
+                </Link>
+              ) : (
+                <EmojiBullet emoji={bio.emoji} text={bio.text} />
+              )}
+            </li>
           ))}
         </Box>
         <Box
