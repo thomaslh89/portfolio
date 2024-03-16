@@ -19,3 +19,43 @@
     line-height: 1.75;
   }
 }
+/* Resume.module.scss */
+
+.mobileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.downloadButton {
+  background-color: #e5c64d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.desktopContainer {
+  display: none; /* Cache le contenu PDF pour les petits écrans */
+}
+
+@media screen and (min-width: 768px) {
+  .mobileContainer {
+    display: none; /* Cache le bouton de téléchargement pour les écrans plus grands */
+  }
+
+  .desktopContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+.dox {
+  height: 100%;
+}
+.downloadButton {
+  border-radius: 10px;
+}
