@@ -50,16 +50,7 @@ export default function Home() {
           {info.miniBio.map((bio, index) => (
             <li key={index}>
               {bio.link ? (
-                <Link
-                  to={bio.link}
-                  onClick={(e) => {
-                    if (bio.link === "/resume") {
-                      e.preventDefault();
-                      // Ajoutez ici le code pour gérer la navigation interne vers votre CV
-                      // Par exemple : history.push('/resume');
-                    }
-                  }}
-                >
+                <Link to={bio.link}>
                   <EmojiBullet emoji={bio.emoji} text={bio.text} />
                 </Link>
               ) : (
