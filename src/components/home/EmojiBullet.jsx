@@ -20,7 +20,7 @@ function EmojiBullet(props) {
       >
         {emoji}
       </Box>
-      <a target="_blank" href={link}>
+      <a target="" href={link}>
         {text}
       </a>
     </Box>

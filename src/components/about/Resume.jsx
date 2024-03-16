@@ -3,26 +3,20 @@ import Style from "./About.module.scss";
 import Terminal from "./Terminal";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
+import samplePDF from "../../assets/Resume.pdf";
+import { Document, Page } from "react-pdf";
 
-export default function About() {
+export default function Resume() {
   const firstName = info.firstName.toLowerCase();
 
   function aboutMeText() {
     return (
       <>
-        <p>
-          <span style={{ color: info.baseColor }}>
-            {firstName}
-            {info.lastName.toLowerCase()} $
-          </span>{" "}
-          cat about{firstName}{" "}
-        </p>
-        <p>
-          <span style={{ color: info.baseColor }}>
-            about{firstName} <span className={Style.green}>(main)</span> ${" "}
-          </span>
-          {info.bio}
-        </p>
+        <div className="dox">
+          <Document file={samplePDF}>
+            <Page className="doc" width={1000} pageNumber={1} />
+          </Document>
+        </div>
       </>
     );
   }

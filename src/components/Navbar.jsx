@@ -27,11 +27,6 @@ const links = [
     to: "/portfolio",
     active: "portfolio",
   },
-  {
-    name: "Resume",
-    to: "/resume",
-    active: "Resume",
-  },
 ];
 
 export default function Navbar({ darkMode, handleClick }) {
