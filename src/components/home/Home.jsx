@@ -62,6 +62,7 @@ export default function Home() {
         <Box
           display={"flex"}
           gap={"1.5rem"}
+          justifyContent={"center"}
           fontSize={{ xs: "2rem", md: "2.5rem" }}
         >
           {info.socials.map((social, index) => (
