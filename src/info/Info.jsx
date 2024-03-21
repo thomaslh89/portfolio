@@ -35,10 +35,12 @@ export const info = {
     {
       emoji: "☕",
       text: "fueled by coffee",
+      link: "https://tenor.com/fr/view/coffee-morning-good-morning-coffee-images-gif-12121789316463949651",
     },
     {
       emoji: "🌎",
       text: "based in Nantes",
+      link: "https://www.levoyageanantes.fr/a-faire/activites/tout-gratuit/",
     },
     {
       emoji: "💼",
