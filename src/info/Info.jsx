@@ -125,8 +125,8 @@ export const info = {
     },
     {
       title: "Marvel",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      live: "https://marvel.lehebel.com",
+      source: "https://github.com/thomaslh89/Marvel",
       image: mock3,
     },
     {
