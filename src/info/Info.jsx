@@ -82,12 +82,13 @@ export const info = {
       "github",
       "html5",
       "css3",
+      "tailwind",
       "nodejs",
       "express",
       "mangoDB",
       "reactnative",
     ],
-    exposedTo: ["zapier", "airtable", "adobe illustrator", "notion"],
+    exposedTo: ["zapier", "airtable", "adobe illustrator", "hubspot", "notion"],
   },
   hobbies: [
     {
