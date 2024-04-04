@@ -120,8 +120,8 @@ export const info = {
     },
     {
       title: "Vinted Clone",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      live: "vinted.lehebel.com",
+      source: "https://github.com/thomaslh89/VintedV2",
       image: mock2,
     },
     {
