@@ -131,7 +131,7 @@ export const info = {
       image: mock3,
     },
     {
-      title: "Aibnb Clone",
+      title: "Airbnb Clone",
       live: "https://paytonpierce.dev",
       source: "https://github.com/paytonjewell",
       image: mock4,
