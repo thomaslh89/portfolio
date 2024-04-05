@@ -132,8 +132,8 @@ export const info = {
     },
     {
       title: "Airbnb Clone",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      // live: "",
+      source: "https://github.com/thomaslh89/Airbnb",
       image: mock4,
     },
     {
