@@ -119,7 +119,7 @@ export const info = {
     },
     {
       title: "Vinted Clone",
-      live: "vinted.lehebel.com",
+      live: "https://vinted.lehebel.com",
       source: "https://github.com/thomaslh89/VintedV2",
       image: mock2,
     },
