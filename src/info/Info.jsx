@@ -84,7 +84,7 @@ export const info = {
       "tailwind",
       "nodejs",
       "express",
-      "mangoDB",
+      "mongoDB",
       "reactnative",
     ],
     exposedTo: ["zapier", "airtable", "adobe illustrator", "hubspot", "notion"],
